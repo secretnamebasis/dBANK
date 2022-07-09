@@ -1,0 +1,24 @@
+; This is a ledger file
+; This ledger file is meant to record the dealings of DUSD
+; DUSD is a stablecoin backed by deposits of US Mint 
+; DUSD gets its name from being a DERO USD
+: The first act that secretnamebasis did is commit 2000 into the trust
+
+2022/07/08 * INITIAL DEPOSIT 
+  EQUITY:INITIAL DEPOSIT:USD  -2000 USD
+  ASSETS:FIAT:USD  2000 USD
+
+2022/07/08 * TOKENIZED USD
+  ASSETS:FIAT:USD  -2000 USD
+  ASSETS:CRYPTO:DUSD  2000 DUSD
+
+; To show case that we can mint tokens on demand, secretnamebasis commit another 250 into the trust
+
+2022/07/08 * USD DEPOSIT
+  EQUITY:DEPOSIT:USD  -250 USD
+  ASSETS:FIAT:USD  250 USD
+
+2022/07/08 * TOKENIZED USD
+  ASSETS:FIAT:USD  -250 USD
+  ASSETS:CRYPTO:DUSD  250 DUSD
+  
